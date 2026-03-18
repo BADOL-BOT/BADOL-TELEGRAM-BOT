@@ -53,6 +53,23 @@
 
 ---
 
+🛠️ EXAMPLE COMMAND
+module.exports.config = {
+  name: "example",
+  credits: "MOHAMMAD-BADOL",
+  aliases: ["ex"],
+  prefix: true,
+  permission: 0,
+  description: "Example command for testing",
+  tags: ["demo"]
+};
+
+module.exports.run = async (bot, msg, args) => {
+  bot.sendMessage(msg.chat.id, "🔥 Command is working perfectly!");
+};
+
+এই structure অনুযায়ী তুমি নতুন কমান্ড তৈরি করতে পারবে।
+
 ## 📊 GITHUB STATS
 
 <p align="center">
