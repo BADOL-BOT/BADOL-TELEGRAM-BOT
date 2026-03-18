@@ -18,7 +18,7 @@
 
 ---
 
-# 🔱BADOL-TELEGRAM-BOT🔱
+# 🔱 BADOL TELEGRAM BOT 🔱
 
 > 🚀 A Premium Telegram User & Group Management Bot built with Node.js
 
@@ -166,27 +166,28 @@ node index.js
 
 ## 🛡️ DEVELOPER INFO
 
-* 👤 **Mohammad Badol**
-* 🆔 **Telegram ID:** 6954597258
-* ✈️ **Username:** [https://t.me/B4D9L_007](https://t.me/B4D9L_007)
-* 📱 **WhatsApp:** [https://wa.me/8801782721761](https://wa.me/8801782721761)
-* 🔵 **Facebook:** [https://facebook.com/B4D9L](https://facebook.com/B4D9L)
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=00F2FF&height=120&section=footer&text=THANKS%20FOR%20VISITING%20BADOL%20BOT&fontSize=25&animation=fadeIn&fontAlignY=50" width="100%" />
-</p>
+- 👤 Mohammad Badol  
+- 🆔 Telegram ID: 6954597258  
+- ✈️ Username: https://t.me/B4D9L_007  
+- 📱 WhatsApp: https://wa.me/8801782721761  
+- 🔵 Facebook: https://facebook.com/B4D9L  
 
 ---
 
 ## 📜 LICENSE
 
-© 2026 **BADOL TELEGRAM BOT** All Rights Reserved.
+© 2026 BADOL TELEGRAM BOT  
+All Rights Reserved.
 
 ---
 
-## ⚠️ DISCLAIMER
+## ⚠ DISCLAIMER
 
 এই বটটি শুধুমাত্র শিক্ষা ও বিনোদনের জন্য তৈরি।  
 অবৈধ কাজে ব্যবহার করলে ডেভেলপার দায়ী থাকবে না।
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=rect&color=00F2FF&height=70&section=footer&text=THANKS%20FOR%20VISITING%20BADOL%20TELEGRAM%20BOT&fontSize=22&animation=twinkle" width="100%" alt="Badol Bot Footer">
+</p>
