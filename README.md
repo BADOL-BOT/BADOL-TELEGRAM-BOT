@@ -53,8 +53,11 @@
 
 ---
 
-🛠️ EXAMPLE COMMAND
+## 🛠️ EXAMPLE COMMAND SYSTEM
 
+বটের নতুন কমান্ড তৈরি করার জন্য নিচের স্ট্রাকচারটি অনুসরণ করুন। এটি `BOT/Cmd/` ফোল্ডারে সেভ করতে হবে।
+
+```js
 module.exports.config = {
   name: "example",
   credits: "MOHAMMAD-BADOL",
@@ -69,7 +72,8 @@ module.exports.run = async (bot, msg, args) => {
   bot.sendMessage(msg.chat.id, "🔥 Command is working perfectly!");
 };
 
-এই structure অনুযায়ী তুমি নতুন কমান্ড তৈরি করতে পারবে।
+
+---
 
 ## 📊 GITHUB STATS
 
@@ -185,5 +189,5 @@ All Rights Reserved.
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=rect&color=00F2FF&height=70&section=footer&text=THANKS%20FOR%20VISITING%20BADOL%20TELEGRAM%20BOT&fontSize=25&animation=twinkle" width="100%">
+  <img src="https://capsule-render.vercel.app/render?type=rect&color=00F2FF&height=70&section=footer&text=THANKS%20FOR%20VISITING%20BADOL%20TELEGRAM%20BOT&fontSize=22&animation=twinkle" width="100%" alt="Badol Bot Footer">
 </p>
