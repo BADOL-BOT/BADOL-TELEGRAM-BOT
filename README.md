@@ -54,6 +54,7 @@
 ---
 
 🛠️ EXAMPLE COMMAND
+
 module.exports.config = {
   name: "example",
   credits: "MOHAMMAD-BADOL",
