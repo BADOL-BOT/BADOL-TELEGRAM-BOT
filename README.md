@@ -189,5 +189,11 @@ All Rights Reserved.
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=rect&color=00F2FF&height=70&section=footer&text=THANKS%20FOR%20VISITING%20BADOL%20TELEGRAM%20BOT&fontSize=22&animation=twinkle" width="100%" alt="Badol Bot Footer">
+  <a href="https://t.me/B4D9L_007">
+    <img src="https://i.imgur.com/6u3c7uV.jpeg" width="100%" alt="Badol Bot Footer" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=rect&color=00F2FF&height=50&section=footer&text=THANKS%20FOR%20VISITING%20BADOL%20BOT&fontSize=20&animation=twinkle" width="100%">
 </p>
