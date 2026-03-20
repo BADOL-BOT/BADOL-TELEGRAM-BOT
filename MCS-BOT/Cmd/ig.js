@@ -1,0 +1,94 @@
+/**
+ * 🛠️ MCS-BOT ISLAMIC POST MODULE
+ * 👤 AUTHOR: MOHAMMAD BADOL
+ * 🛡️ FEATURES: Stylish Box Design, Random Caption & Photo
+ */
+
+const axios = require('axios');
+
+module.exports.config = {
+  name: "prefix_only_post", 
+  credits: "MOHAMMAD-BADOL",
+  prefix: true,
+  aliases: ["/", "islamic", "randompost"], 
+  description: "Random Islamic Caption with photo triggered by prefix alone.",
+  cooldown: 5,
+  role: 0 
+};
+
+module.exports.run = async (bot, msg) => {
+    const chatId = msg.chat.id;
+    const messageId = msg.message_id;
+    
+    // ডাইনামিক বট নাম সংগ্রহের চেষ্টা
+    let botName = "MCS-BOT";
+    try {
+        const me = await bot.getMe();
+        botName = me.first_name;
+    } catch (e) { console.log("Bot name fetch error"); }
+    
+    try {
+      const captions = [
+        "– কোনো নেতার পিছনে নয়.!!🤸‍♂️\n– মসজিদের ইমামের পিছনে দাড়াও জীবন বদলে যাবে ইনশাআল্লাহ.!!🖤🌻",
+        "„আল্লাহর রহমত থেকে নিরাশ হওয়া যাবে না!” আল্লাহ অবশ্যই তোমাকে ক্ষমা করে দিবেন☺️🌻\nসুরা যুমাহ্ আয়াত ৫২..৫৩💙🌸",
+        "- ইসলাম অহংকার করতে শেখায় না!🌸\n- ইসলাম শুকরিয়া আদায় করতে শেখায়!🤲🕋🥀",
+        "বেপর্দা নারী যদি নায়িকা হতে পারে\n_____🤗🥀 -তবে পর্দাশীল নারী গুলো সব ইসলামের শাহাজাদী __🌺🥰",
+        "স্মার্ট নয় ইসলামিক জীবন সঙ্গি খুঁজুন 🖤🥰",
+        "যখন বান্দার জ্বর হয়,😇\nতখন গুনাহ গুলো ঝড়ে পড়তে থাকে☺️\n– হযরত মুহাম্মদ(সাঃ)●───༊",
+        "Happiness Is Enjoying The Little Things In Life..♡🌸\nAlhamdulillah For Everything...💗🥰",
+        "তুমি আসক্ত হও—তবে নেশায় নয় আল্লাহর ইবাদতে-||-🖤🌸✨",
+        "হাসতে হাসতে একদিন সবাইকে কাদিয়ে বিদায় নিবো..!!🙂💔🥀",
+        "হাজারো স্বপ্নের শেষ স্থান—কবরস্থান♡❤",
+        "প্রসঙ্গ যখন ধর্ম নিয়ে•🥰😊\nতখন আমাদের ইসলামই সেরা•❤️\n𝐀𝐥𝐡𝐚𝐦𝐝𝐮𝐥i𝐥𝐥𝐚🌸❤️",
+        "কেউ পছন্দ না করলে কি যায় আসে,,🙂\nআল্লাহ তো পছন্দ করেই বানিয়েছে,,♥️🥀\nAlhamdulillah 🕋",
+        "এত অহংকার করে লাভ নেই! 🌺\nমৃত্যুটা নিশ্চিত,, শুধু সময়টা অনিশ্চিত।🖤🙂",
+        "ছিঁড়ে ফেলুন অতীতের সকল পাপের অধ্যায়।\nফিরে আসুন রবের ভালোবাসায়••🖤🥀",
+        "বুকে হাজারো কষ্ট নিয়ে আলহামদুলিল্লাহ বলাটা••!☺️\nআল্লাহর প্রতি অগাধ বিশ্বাসের নমুনা❤️🥀",
+        "আল্লাহর ভালোবাসা পেতে চাও•••!🤗\nতবে রাসুল (সা:)কে অনুসরণ করো••!🥰"
+      ];
+
+      const links = [
+        "https://i.postimg.cc/7LdGnyjQ/images-31.jpg",
+        "https://i.postimg.cc/65c81ZDZ/images-30.jpg",
+        "https://i.postimg.cc/Y0wvTzr6/images-29.jpg",
+        "https://i.postimg.cc/1Rpnw2BJ/images-28.jpg",
+        "https://i.postimg.cc/mgrPxDs5/images-27.jpg",
+        "https://i.postimg.cc/yxXDK3xw/images-26.jpg",
+        "https://i.postimg.cc/kXqVcsh9/muslim-boy-having-worship-praying-fasting-eid-islamic-culture-mosque-73899-1334.webp",
+        "https://i.postimg.cc/hGzhj5h8/muslims-reading-from-quran-53876-20958.webp",
+        "https://i.postimg.cc/x1Fc92jT/blue-mosque-istanbul-1157-8841.webp",
+        "https://i.postimg.cc/j5y56nHL/muhammad-ali-pasha-cairo-219717-5352.webp",
+        "https://i.postimg.cc/dVWyHfhr/images-1-21.jpg",
+        "https://i.postimg.cc/q7MGgn3X/images-1-22.jpg",
+        "https://i.postimg.cc/sX5CXtSh/images-1-16.jpg",
+        "https://i.postimg.cc/66Rp2Pwz/images-1-17.jpg",
+        "https://i.postimg.cc/Qtzh9pY2/images-1-18.jpg",
+        "https://i.postimg.cc/MGrhdz0R/images-1-19.jpg",
+        "https://i.postimg.cc/LsMSj9Ts/images-1-20.jpg",
+        "https://i.postimg.cc/KzNXyttX/images-1-13.jpg"
+      ];
+
+      const randomCaption = captions[Math.floor(Math.random() * captions.length)];
+      const randomImageLink = links[Math.floor(Math.random() * links.length)];
+
+      // ✨ আলটিমেট স্টাইলিশ বক্স ডিজাইন
+      let stylishMsg = `╔══════════════════╗\n`;
+      stylishMsg += `   ✨ **ISLAMIC REMINDER** ✨\n`;
+      stylishMsg += `╚══════════════════╝\n\n`;
+      stylishMsg += `» ${randomCaption} «\n\n`;
+      stylishMsg += `━━━━━━━━━━━━━━━━━━━━\n`;
+      stylishMsg += `👤 **Owner:** Mohammad Badol\n`;
+      stylishMsg += `🤖 **Bot:** ${botName}\n`;
+      stylishMsg += `━━━━━━━━━━━━━━━━━━━━`;
+
+      bot.sendPhoto(chatId, randomImageLink, {
+        caption: stylishMsg,
+        parse_mode: 'Markdown',
+        reply_to_message_id: messageId
+      });
+      
+    } catch (error) {
+      console.error("Error in generating content:", error);
+      bot.sendMessage(chatId, "❌ দুঃখিত, কন্টেন্ট লোড করতে সমস্যা হয়েছে।", { reply_to_message_id: messageId });
+    }
+};
