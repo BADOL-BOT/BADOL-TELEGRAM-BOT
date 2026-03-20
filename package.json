@@ -1,0 +1,125 @@
+{
+
+  "name": "mcs-bot",
+
+  "version": "1.0.0",
+
+  "description": "A modular Telegram bot with advanced features from BADOL-BOT",
+
+  "main": "index.js",
+
+  "scripts": {
+
+    "start": "node index.js",
+
+    "dev": "nodemon index.js",
+
+    "test": "echo \"No test specified\" && exit 1"
+
+  },
+
+  "repository": {
+
+    "type": "git",
+
+    "url": "git+https://github.com/mohammadbadol.git"
+
+  },
+
+  "keywords": [
+
+    "telegram",
+
+    "bot",
+
+    "mcs-bot",
+
+    "badol-bot",
+
+    "nayan-api",
+
+    "media-downloader"
+
+  ],
+
+  "author": "MOHAMMAD-BADOL <https://github.com/mohammadbadol>",
+
+  "license": "MIT",
+
+  "bugs": {
+
+    "url": "https://github.com/mohammadbadol/issues"
+
+  },
+
+  "homepage": "https://github.com/mohammadbadol#readme",
+
+  "dependencies": {
+
+    "@discordjs/collection": "^2.1.1",
+
+    "@heyputer/puter.js": "^2.2.5",
+
+    "axios": "^1.13.2",
+
+    "canvas": "^3.2.0",
+
+    "chalk": "^4.1.2",
+
+    "cheerio": "^1.0.0",
+
+    "cfonts": "^3.3.0",
+
+    "dotenv": "^16.3.1",
+
+    "express": "^4.19.2",
+
+    "figlet": "^1.7.0",
+
+    "file-type": "^16.5.3",
+
+    "form-data": "^4.0.0",
+
+    "fs-extra": "^11.1.1",
+
+    "js-beautify": "^1.15.1",
+
+    "mime-types": "^2.1.35",
+
+    "moment-timezone": "^0.6.0",
+
+    "moment-hijri": "^3.0.0",
+
+    "nanoid": "^5.0.4",
+
+    "nayan-api-servers": "^2.4.8",
+
+    "nayan-media-downloaders": "^0.1.6",
+
+    "node-fetch": "^2.6.1",
+
+    "node-telegram-bot-api": "^0.66.0",
+
+    "node-schedule": "^2.1.1",
+
+    "node-cron": "^3.0.2",
+
+    "nodemon": "^3.0.1",
+
+    "open-graph": "^0.2.6",
+
+    "request": "^2.88.2",
+
+    "simpl.db": "^2.13.0",
+
+    "speakeasy": "^2.0.0",
+
+    "telegraf": "^4.16.3",
+
+    "uuid": "^9.0.0",
+
+    "youtube-search-api": "^1.2.2"
+
+  }
+
+}
