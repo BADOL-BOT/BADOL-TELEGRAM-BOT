@@ -6,7 +6,7 @@
 
 module.exports = {
   // আপনার বটের টোকেন এখানে দিন
-  BOT_TOKEN: "ADD_YOUR_BOT_TOKEN-HERE",
+  BOT_TOKEN: "ADD_YOUR_BOT_TOKEN",
 
   BOT_SETTINGS: {
     NAME: "𝄞⋆⃝🧚‍𝐌𝐂𝐒-𝐁𝐎𝐓🧚‍⋆⃝𝄞",
@@ -43,24 +43,9 @@ module.exports = {
 
   /**
    * 🛡️ FORCE JOIN SETTINGS
-   * এখানে ৩টি গ্রুপের নাম এবং আইডি দিন। 
-   * ইউজার এই ৩টিতে জয়েন না থাকলে কমান্ড কাজ করবে না।
-   * (আইডি অবশ্যই @username বা -100 ফরম্যাটে হতে হবে)
+   * সব গ্রুপ রিমুভ করা হয়েছে। এখন ইউজাররা সরাসরি কমান্ড ব্যবহার করতে পারবে।
    */
-  REQUIRED_CHATS: [
-    { 
-      name: "My Project Group", 
-      id: "@mreditorzone" 
-    },
-    { 
-      name: "MCS Support Group", 
-      id: "@mcssupport" // এখানে আপনার ২য় গ্রুপের ইউজারনেম দিন
-    },
-    { 
-      name: "Update News", 
-      id: "@BADOLBOTGC" // এখানে আপনার ৩য় গ্রুপের ইউজারনেম দিন
-    }
-  ],
+  REQUIRED_CHATS: [],
 
   // অন্যান্য সেটিংস
   MAINTENANCE_MODE: false, // এটি true করলে বট শুধু ওনার চালাতে পারবে
