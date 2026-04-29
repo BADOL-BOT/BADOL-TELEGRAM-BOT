@@ -6,7 +6,7 @@
 
 module.exports = {
   // আপনার বটের টোকেন এখানে দিন
-  BOT_TOKEN: "8799110312:AAH-t6cTFDxJCKrOtBwxMP4e4RXGS7Y5S0E",
+  BOT_TOKEN: "ADD_YOUR_BOT_TOKEN_HERE",
 
   BOT_SETTINGS: {
     NAME: "𝄞⋆⃝🧚‍𝐌𝐂𝐒-𝐁𝐎𝐓🧚‍⋆⃝𝄞",
